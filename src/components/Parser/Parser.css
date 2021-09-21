@@ -1,0 +1,10 @@
+.parser {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Space Mono', sans-serif;
+    color: #666666;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
