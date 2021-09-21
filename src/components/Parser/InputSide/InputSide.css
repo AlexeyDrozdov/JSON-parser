@@ -7,11 +7,12 @@
 
 .input-area {
     width: 80vw;
-    height: 80vh;
+    height: 75vh;
+    resize: none;
 }
 .input-side > button {
     width: 10rem;
-    margin: 0.5rem;
+    margin: 2rem;
     height: 2rem;
     border-radius: 0.2rem;
     background: #8BC34A;
