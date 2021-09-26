@@ -1,10 +1,15 @@
 .parser {
     display: flex;
-    align-items: center;
-    flex-direction: row;
     font-family: 'Space Mono', sans-serif;
     color: #666666;
-    justify-content: center;
-    height: 100vh;
+    justify-content: space-between;
     background-color: #f7f7f7;
+    height: 100%;
+}
+
+.parser-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
 }

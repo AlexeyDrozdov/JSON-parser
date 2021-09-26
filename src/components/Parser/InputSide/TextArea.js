@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 
 function checkJson(text) {
+    if (!text) {
+        return true;
+    }
     try {
         return !!JSON.parse(text);
     } catch {
@@ -13,7 +16,11 @@ function TextArea(props) {
     const inputChange = (e) => {
         const value = e.target.value;
         setText(value);
-        props.validChange(checkJson(value));
+        const isValid = checkJson(value);
+        props.validChange(isValid);
+        if (isValid) {
+            props.getValidText(value);
+        }
     }
     return (
         <textarea 

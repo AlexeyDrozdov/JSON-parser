@@ -1,18 +1,19 @@
-.input-side {
+.input-area {
+    resize: none;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    flex: 1;
+}
+
+.input-info {
+    flex: 0 0 120px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.input-area {
-    width: 80vw;
-    height: 75vh;
-    resize: none;
-}
-.input-side > button {
+.input-info  > button {
     width: 10rem;
-    margin: 2rem;
     height: 2rem;
     border-radius: 0.2rem;
     background: #8BC34A;
@@ -22,4 +23,10 @@
     -webkit-appearance: none;
     border: 0;
     font-size: 1rem;
+    margin: 15px;
+}
+.input-info  .error {
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
 }
